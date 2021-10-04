@@ -12,6 +12,10 @@ module.exports = {
     '@storybook/addon-backgrounds',
     '@storybook/addon-a11y',
   ],
+  babel: async (options) => ({
+    ...options,
+    presets: [['@babel/typescript', { jsxPragma: 'h' }]],
+  }),
   webpackFinal: (config) => {
     config.module.rules.push({
       test: [/\.stories\.js$/],
