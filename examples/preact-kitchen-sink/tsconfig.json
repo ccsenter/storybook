@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "include": ["src/*"]
+}
